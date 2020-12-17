@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Final Project</title>
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Marcellus+SC&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class=header>The Impact of K-pop</h1>
+            <h2 class=subhead>The Development of K-pop</h2>
+            <div id="timeline">
+                <ul id="dates">
+                    <li><a href="#1992" class="selected">1992</a></li>
+                    <li><a href="#1996">1996</a></li>
+                    <li><a href="#1997">1997</a></li>
+                    <li><a href="#2003">2003</a></li>
+                    <li><a href="#2005">2005</a></li>
+                    <li><a href="#2006">2006</a></li>
+                    <li><a href="#2007">2007</a></li>
+                    <li><a href="#2008">2008</a></li>
+                    <li><a href="#2009">2009</a></li>
+                    <li><a href="#2010">2010</a></li>
+                    <li><a href="#2011">2011</a></li>
+                    <li><a href="#2012">2012</a></li>
+                    <li><a href="#2013">2013</a></li>
+                    <li><a href="#2014">2014</a></li>
+                    <li><a href="#2015">2015</a></li>
+                    <li><a href="#2016">2016</a></li>
+                    <li><a href="#2017">2017</a></li>
+                    <li><a href="#2018">2018</a></li>
+                    <li><a href="#2019">2019</a></li>
+                    <li><a href="#2020">2020</a></li>
+                </ul>
+                <ul id="issues">
+                    <li id="1992" class="selected">
+                        <img src="image/1992.jpg" />
+                        <h1>1992</h1>
+                        <p>Seo Taeji and Boys, considered one of the first KPop bands, debuted in 1992 with song "Nan Arayo," which can be translated to "I Know".</p>
+                    </li>
+                    <li id="1996">
+                        <img src="image/1996.jpg" />
+                        <h1>1996</h1>
+                        <p>Legendary boy band H.O.T debuted. They became the first pop group in South Korea to sell a million albums and was also the first group to perform at Seoul Olympic Stadium. This is an incredible feat considering the economic crisis South Korea was going through in the 1990s.</p>
+                    </li>
+                    <li id="1997">
+                        <img src="image/1997.jpg" />
+                        <h1>1997</h1>
+                        <p>Rival to boy band H.O.T debuted with the name Sech Kies. Other groups such as Baby V.O.X, NRG, and S.E.S. debuted. This signals the official beginning of K-Pop development.<br/><br/>Pictured: S.E.S.</p>
+                    </li>
+                    <li id="2003">
+                        <img src="image/2003.jpg" />
+                        <h1>2003</h1>
+                        <p>The beginning of the 2nd generation of K-Pop is marked with the debut of TVXQ.</p>
+                    </li>
+                    <li id="2005">
+                        <img src="image/2005.jpg" />
+                        <h1>2005</h1>
+                        <p>Super Junior debuts, along with notable soloists like Jessi and Lim Jeong-hee.<br/><br/>Pictured: Super Junior</p>
+                    </li>
+                    <li id="2006">
+                        <img src="image/2006.jpg" />
+                        <h1>2006</h1>
+                        <p>This year marks the start of legendary boy band Big Bang, who still remains relevant to this day, becoming the role model for many people aspiring to be K-pop singers.</p>
+                    </li>
+                    <li id="2007">
+                        <img src="image/2007.jpg" />
+                        <h1>2007</h1>
+                        <p>K-Pop groups such as Wonder Girls, KARA, F.T. Island and Girls Generation debuted. K-Pop groups also started to focus on taking K-Pop to other countries. Notably, K-Pop soloist Rain became the first Korean to perform at the Tokyo Dome in Japan.<br/><br/>Pictured: Girls Generation</p>
+                    </li>
+                    <li id="2008">
+                        <img src="image/2008.jpg" />
+                        <h1>2008</h1>
+                        <p>Power vocal duo Davichi debuted, along with SHINee, 2AM, 2PM, and U-Kiss.<br/><br/>Pictured: SHINee</p>
+                    </li>
+                    <li id="2009">
+                        <img src="image/2009.jfif" />
+                        <h1>2009</h1>
+                        <p>The number of K-Pop group debuts started to increase rapidly, signalling the beginning of a K-Pop industry boom.<br/><br/>Number of group debuts: 15<br/>Notable debuts: 2NE1, f(x), 4Minute<br/>Pictured: 2NE1</p>
+                    </li>
+                    <li id="2010">
+                        <img src="image/2010.jpg" />
+                        <h1>2010</h1>
+                        <p>Number of group debuts: 13<br/>Notable debuts: SISTAR, Infinite, Miss A, Girl's Day<br/>Pictured: Infinite</p>
+                    </li>
+                    <li id="2011">
+                        <img src="image/2011.jpg" />
+                        <h1>2011</h1>
+                        <p>Number of group debuts: 19<br/>Notable debuts: Block B, APink, B1A4<br/>Pictured: APink</p>
+                    </li>
+                    <li id="2012">
+                        <img src="image/2012.jpg" />
+                        <h1>2012</h1>
+                        <p>With the boom of PSY's "Gangnam Style" throughout the world, the paradigm of K-Pop shifted drastically.<br/><br/>Number of group debuts: 40<br/>Notable debuts: BTOB, EXO, VIXX, AOA<br/>Pictured: PSY</p>
+                    </li>
+                    <li id="2013">
+                        <img src="image/2013.jpg" />
+                        <h1>2013</h1>
+                        <p>This year marks the official beginning of 3rd generation KPop, where the groups have developed concepts and larger, more intricate fandoms.<br/><br/>Number of group debuts: 31<br/>Notable debuts: BTS, AOA Black<br/>Pictured: BTS</p>
+                    </li>
+                    <li id="2014">
+                        <img src="image/2014.jpg" />
+                        <h1>2014</h1>
+                        <p>A tragic accident shook K-Pop fans when group Ladies' Code got into a serious car accident, causing the death of two members.<br/><br/>Number of group debuts: 50<br/>Notable debuts: GOT7, Mamamoo, AKMU, Red Velvet, WINNER<br/>Pictured: AKMU</p>
+                    </li>
+                    <li id="2015">
+                        <img src="image/2015.jpg" />
+                        <h1>2015</h1>
+                        <p>Number of group debuts: 54<br/>Notable debuts: Twice, Seventeen, Monsta X, Oh My Girl, GFriend<br/>Pictured: Twice</p>
+                    </li>
+                    <li id="2016">
+                        <img src="image/2016.png" />
+                        <h1>2016</h1>
+                        <p>This year marks the start of K-Pop generation 3.5, which is characterized by the increased power of consumer voice. Audition programs to choose the members of groups were at large, listening to more of what the consumer wants and expects.<br/><br/>Number of group debuts: 47<br/>Notable debuts: IOI, NCT, Blackpink, SF9<br/>Pictured: Blackpink</p>
+                    </li>
+                    <li id="2017">
+                        <img src="image/2017.jpg" />
+                        <h1>2017</h1>
+                        <p>More iconic moments in K-Pop happened in 2017, including BTS winning Top Social Artist at the Billboard Music Awards (becoming the first K-Pop band to do so). In addition, BTS was the first K-Pop act to perform on an American awards show, performing their song "DNA" at the American Music Awards.<br/><br/>Number of group debuts: 76<br/>Notable debuts: Dreamcatcher, LOONA, Wanna One, K.A.R.D<br/>Pictured: BTS at the BBMAs</p>
+                    </li>
+                    <li id="2018">
+                        <img src="image/2018.jpeg" />
+                        <h1>2018</h1>
+                        <p>This year was remarkable for LGBTQ+ K-Pop fans, as the first openly gay idol, Holland, debuted.<br/><br/>Number of group debuts: 75<br/>Notable debuts: ATEEZ, Stray Kids, (G)I-DLE<br/>Pictured: Holland</p>
+                    </li>
+                    <li id="2019">
+                        <img src="image/2019.jpg" />
+                        <h1>2019</h1>
+                        <p>K-Pop slowly is breaking boundaries, being unable to be defined simply within South Korea with globalized groups like BTS, Blackpink, ATEEZ, and Stray Kids.<br/><br/>Number of group debuts: 70<br/>Notable debuts: TXT, ITZY, AB6IX, Super M<br/>Pictured: TXT</p>
+                    </li>
+                    <li id="2020">
+                        <img src="image/2020.jpeg" />
+                        <h1>2020</h1>
+                        <p>Despite the pandemic, K-Pop groups were quite active in releasing new songs and music videos, causing album sales and streams to continue to increase. BTS breaks yet another record by becoming the first all-South Korean group to top the Billboard Hot 100 with their song "Dynamite".<br/><br/>Number of group debuts: 25<br/>Pictured: BTS</p>
+                    </li>
+                </ul>
+                <div id="grad_top"></div>
+                <div id="grad_bottom"></div>
+                <a href="#" id="next">+</a>
+                <a href="#" id="prev">-</a>
+            </div>
+            <br/>
+        </header>
+        <main>
+            <h2 class=subhead>Worldwide Interest in K-pop During the 2010s</h2>
+            <p class=sources>Source: Google Trends</p>
+            <div id="interestChart"></div>
+            <br/><br/><br/>
+            <h2 class=subhead>K-pop Fan Languages</h2>
+            <p class=sources>Source: #KpopTwitter</p>
+            <div id="wordcloud"></div>
+            <br/><br/><br/>
+            <h2 class=subhead>K-pop Songs in Billboard Charts</h2>
+            <p class=sources>Source: Billboard Charts</p>
+            <div id="lineChart"></div>
+            <br/><br/><br/>
+            <h2 class=subhead>Top K-pop Album Sales</h2>
+            <p class=sources>Source: Gaon Chart</p>
+            <div class=content>
+                <div class=item>
+                    <h3>2019</h3>
+                    <br/>
+                    <ul id=sales>
+                        <li>
+                            <span id=image><img src="image/2019_1.jpg" /></span>
+                            <h1>MAP OF THE SOUL: Persona</h1>
+                            <p>BTS - 3.72 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2019_2.jpg" /></span>
+                            <h1>3RD ALBUM 'An Ode'</h1>
+                            <p>SEVENTEEN - 0.86 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2019_3.jpg" /></span>
+                            <h1>OBSESSION - The 6th Album</h1>
+                            <p>EXO - 0.77 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2019_4.jpg" /></span>
+                            <h1>Soaring: QUANTUM LEAP</h1>
+                            <p>X1 - 0.58 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2019_5.png" /></span>
+                            <h1>BTS WORLD OST</h1>
+                            <p>BTS - 0.55 million</p><br/>
+                        </li>
+                    </ul>
+                </div>
+                <div class=item>
+                    <h3>2020</h3>
+                    <br/>
+                    <ul id=sales>
+                        <li>
+                            <span id=image><img src="image/2020_1.jpg" /></span>
+                            <h1>MAP OF THE SOUL: 7</h1>
+                            <p>BTS - 4.27 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2020_2.jpg" /></span>
+                            <h1>7TH MINI ALBUM 'Henggarae'</h1>
+                            <p>SEVENTEEN - 1.21 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2020_3.jpg" /></span>
+                            <h1>Delight - The 2nd Mini Album</h1>
+                            <p>BAEKHYUN - 0.97 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2020_4.jpg" /></span>
+                            <h1>NCT #127 Neo Zone - The 2nd Album</h1>
+                            <p>NCT 127 - 0.78 million</p><br/>
+                        </li>
+                        <li>
+                            <br/><span id=image><img src="image/2020_5.jpg" /></span>
+                            <h1>Reload</h1>
+                            <p>NCT DREAM - 0.60 million</p><br/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
